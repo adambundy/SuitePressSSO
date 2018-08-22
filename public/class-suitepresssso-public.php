@@ -60,14 +60,14 @@ class Suitepresssso_Public {
 	}
 
 	// flush_rules() if our rules are not yet included
-	public function my_flush_rules(){
-		$rules = get_option( 'rewrite_rules' );
-
-		if ( ! isset( $rules['mssso/login$'] ) ) {
-			global $wp_rewrite;
-		   	$wp_rewrite->flush_rules();
-		}
-	}
+	//public function my_flush_rules(){
+	//	$rules = get_option( 'rewrite_rules' );
+	//
+	//	if ( ! isset( $rules['mssso/login$'] ) ) {
+	//		global $wp_rewrite;
+	//	   	$wp_rewrite->flush_rules();
+	//	}
+	//}
 
 	public function ms_login_query_vars($vars) {
 		$vars[] = 'mssso';
